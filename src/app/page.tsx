@@ -11,11 +11,12 @@ export default function Page() {
       <section 
         className="
         w-full flex flex-col items-center
-        2xl:mt-60 2xl:mb-64
-        xl:mt-40 xl:mb-48
-        lg:mt-20 lg:mb-32
-        sm:mt-16 sm:mb-12
-        xs:mt-10 xs:mb-8
+        2xl:my-80
+        xl:my-64
+        lg:my-48
+        md:my-32
+        sm:my-24
+        xs:mt-8
         ">
         <h1
           className="text-5xl sm:text-7xl lg:8xl xl:text-9xl font-bold tracking-tight text-center leading-none"
