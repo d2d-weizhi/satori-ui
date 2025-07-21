@@ -8,9 +8,17 @@ export default function Page() {
   return (
     <div className="flex flex-col items-center w-full min-h-screen">
       {/* Hero Title */}
-      <section className="w-full flex flex-col items-center mt-12 mb-8">
+      <section 
+        className="
+        w-full flex flex-col items-center
+        2xl:mt-60 2xl:mb-64
+        xl:mt-40 xl:mb-48
+        lg:mt-20 lg:mb-32
+        sm:mt-16 sm:mb-12
+        xs:mt-10 xs:mb-8
+        ">
         <h1
-          className="text-7xl font-bold tracking-tight text-center"
+          className="text-5xl sm:text-7xl lg:8xl xl:text-9xl font-bold tracking-tight text-center leading-none"
           style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "2px" }}
         >
           Satori
