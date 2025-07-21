@@ -16,7 +16,7 @@ export default function Page() {
           Satori
         </h1>
         <h2 className="text-xl mt-4 text-center text-gray-500 font-light max-w-2xl">
-          Minimal. Modern. Crafted for Flow.
+          Minimalistic UI that Just Flows.
         </h2>
       </section>
 
