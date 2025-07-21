@@ -196,6 +196,7 @@ export default function SatoriDropDownList({
       />
     )
   );
+  OuterElement.displayName = "OuterElement";
 
   const handleOptionClick = (val: string) => {
     console.log("Selected fontFamily:", val);
