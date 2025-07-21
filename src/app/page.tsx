@@ -64,8 +64,7 @@ export default function Page() {
         lg:my-62
         md:my-48
         sm:my-32
-        xs:my-18
-        my-12
+        my-18
         "
       >
         <h1
