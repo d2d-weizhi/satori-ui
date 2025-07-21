@@ -40,7 +40,7 @@ export default function RootLayout({
             draggable={false}
           />
         </div>
-        <main className="min-h-screen flex flex-col ml-28 px-4 sm:px-8">
+        <main className="min-h-screen flex flex-col mx-20 px-4 sm:px-8">
           {children}
         </main>
       </body>
