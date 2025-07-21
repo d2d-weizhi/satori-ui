@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
 import DropDownListPortal from "./dropdownlist-portal";
-import bodyStylesManager from "../../../../stores/body-styles-manager";
-import { DEFAULT_UNITS } from "../../../../types/constants";
+
+const DEFAULT_UNITS = ["px", "rem", "em", "%"]
 
 
 export interface ISatoriDimensionsBoxProps {

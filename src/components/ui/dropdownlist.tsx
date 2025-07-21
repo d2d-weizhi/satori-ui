@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
-import { configs } from "../../../../config";
+import { configs } from "@/lib/config";
 import { FixedSizeList as List, ListChildComponentProps } from "react-window";
-import { STANDARD_FONT_FAMILIES } from "../../../../types/constants";
+import { STANDARD_FONT_FAMILIES } from "@/types/constants";
 import DropDownListPortal from "./dropdownlist-portal";
 
 /**
