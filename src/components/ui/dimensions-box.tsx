@@ -54,7 +54,7 @@ export default function SatoriDimensionsBox({
 
 	return (
 		<div className={`flex flex-col w-full ${className}`}>
-			{label && <span className="min-w-max text-sm text-gray-600 font-medium mb-1">{label}</span>}
+			{label && <span className="items-center min-w-max text-sm text-gray-600 font-medium mb-1">{label}</span>}
 			<div
 				ref={wrapperRef}
 				className={`relative flex w-full h-8 rounded-md border border-gray-300 bg-white`}

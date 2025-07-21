@@ -72,7 +72,7 @@ export default function DropDownListPortal({
   if (!open || !anchorRect) return null;
 
   const portalStyle: React.CSSProperties = {
-    position: "fixed",
+    position: "absolute",
     top: anchorRect ? anchorRect.bottom + window.scrollY + 2 : 2,
     left:
       anchorRect && componentType === "colorpicker"
