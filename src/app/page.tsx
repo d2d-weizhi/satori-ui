@@ -15,7 +15,7 @@ import { Space } from "lucide-react";
 // Import all your other components as needed...
 
 export default function Page() {
-  const [headingText, setHeadingText] = useState("Your Heading Here");
+  const [headingText, setHeadingText] = useState("Satori UI in Action");
   const [headingFontSize, setHeadingFontSize] = useState({
     value: "3",
     unit: "rem",
@@ -27,7 +27,7 @@ export default function Page() {
   const [isBold, setIsBold] = useState(false);
 
   const [paragraphText, setParagraphText] = useState(
-    "This is a sample description. Change the options on the right to see live updates!"
+    "Satori, in Zen Buddhism, means a moment of sudden enlightenment or understanding. This UI library is built on that principle: to provide clear, intuitive, and thoughtfully crafted components that feel like a natural extension of your creative process. It's the culmination of nearly two decades of experience, distilled into a modern, accessible, and high-performance suite for developers and designers who value both form and function."
   );
   const [paragraphColor, setParagraphColor] = useState("#666666");
   const [paragraphFontSize, setParagraphFontSize] = useState({
@@ -59,12 +59,13 @@ export default function Page() {
       <section
         className="
         w-full flex flex-col items-center
-        2xl:my-80
-        xl:my-64
-        lg:my-48
-        md:my-32
-        sm:my-24
-        xs:mt-8
+        2xl:my-90
+        xl:my-76
+        lg:my-62
+        md:my-48
+        sm:my-32
+        xs:my-18
+        my-12
         "
       >
         <h1
