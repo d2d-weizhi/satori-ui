@@ -42,6 +42,7 @@ export default function Page() {
   const [ddlDemoVal, setDdlDemoVal] = useState("none");
   const [cpDemoVal, setCpDemoVal] = useState("#666666")
   const [swDemoVal, setSwDemoVal] = useState(false);
+  const [dimDemoVal, setDimDemoVal] = useState({value: "16", unit: "px"})
   // (Optional) Sync colors with dark mode
   useEffect(() => {
     if (isDarkMode) {
@@ -116,127 +117,152 @@ export default function Page() {
       </section>
 
       {/* Live Demo Section */}
-      <section className="w-full max-w-5xl flex flex-col md:flex-row gap-10 mb-20">
-        {/* Live Preview */}
-        <div className="md:basis-3/5 md:max-w-[60%] flex-1 flex flex-col items-center justify-center">
+      <section className="relative mt-12 min-h-[900px] overflow-hidden rounded-lg border">
+        {/* Layer 1: The Background Image (z-0) */}
+        {/* This container is 200% wide and shifted left by 50% of its own width (which is 100% of the parent's width),
+            effectively aligning the image's center with the section's left edge. */}
+        <div className="absolute top-0 left-50 lg:left-0 h-full w-[100%] z-0 -translate-x-1/2">
           <div
-            className={`
-              w-full mx-8 min-h-[200px] rounded-2xl shadow-xl border border-gray-200
-              transition-colors duration-300 flex flex-col items-center justify-center p-8
-              ${isDarkMode ? "bg-neutral-900" : "bg-white"}
-            `}
-          >
-            {/* Heading */}
-            <h2
-              className="mb-2"
-              style={{
-                color: headingColor,
-                fontSize: `${headingFontSize.value}${headingFontSize.unit}`,
-                fontFamily: headingFontFamily,
-                fontWeight: isBold ? 700 : 400,
-                transition: "color 0.3s",
-              }}
-            >
-              {headingText}
-            </h2>
-            {/* Paragraph */}
-            <p
-              className="text-center max-w-prose mb-2"
-              style={{
-                fontSize: `${paragraphFontSize.value}${paragraphFontSize.unit}`,
-                color: paragraphColor,
-                transition: "color 0.3s",
-              }}
-            >
-              {paragraphText}
-            </p>
-          </div>
+            className="h-full w-full bg-[url('/satori-ui-bg.png')] bg-cover bg-center opacity-80"
+          ></div>
         </div>
-        {/* Controls Panel(s) */}
-        <div className="md:basis-2/5 md:max-width-[40%] flex-1 flex flex-col gap-6 z-20">
-          {/* Heading Options */}
-          <SatoriCollapsiblePanel title="Heading Options" defaultOpen>
-            <div className="flex flex-col gap-4 overflow-y-visible">
-              <SatoriTextBox
-                label="Heading"
-                value={headingText}
-                onChange={setHeadingText}
-              />
-              <SatoriColorPicker
-                label="Color"
-                value={headingColor}
-                onChange={setHeadingColor}
-              />
-              <SatoriSwitch
-                label="Bold"
-                checked={isBold}
-                onChange={setIsBold}
-              />
-              <SatoriDropDownList
-                label="Font Family"
-                value={headingFontFamily}
-                onChange={setHeadingFontFamily}
-                isFontFamily={false}
-                options={STANDARD_FONT_FAMILIES}
-              />
-              <SatoriDimensionsBox
-                label={"Font Size"}
-                value={headingFontSize.value}
-                unit={headingFontSize.unit}
-                onValueChange={(val) =>
-                  setHeadingFontSize({ ...headingFontSize, value: val })
-                }
-                onUnitChange={(unitVal) =>
-                  setHeadingFontSize({ ...headingFontSize, unit: unitVal })
-                }
-              />
+
+        {/* Layer 2: The Gradient Overlay (z-10) - CORRECTED */}
+        {/* This gradient uses the correct variable for the solid color on the right. */}
+        <div
+          className="absolute inset-0 z-10 
+             bg-gradient-to-r 
+             from-slate-50/20 
+             via-55%
+             via-[#f9fafb] 
+             to-[#f9fafb] lg:hidden"
+        ></div>
+
+        {/* Layer 3: Content (z-20) */}
+        {/* This is the top layer for all interactive UI. It's a flex container that
+            arranges the preview and controls. 'relative' and 'z-20' ensure it's on top. */}
+        <div className="relative z-20 flex flex-col xl:flex-row gap-4 p-4 lg:p-6 min-h-[600px]">
+          {/* Live Preview */}
+          <div className="w-full lg:w-1/2 sm:mt-8 lg:my-56 h-full flex items-center justify-center p-4">
+            <div
+              className={`
+                w-full mx-8 min-h-[200px] rounded-2xl shadow-xl border border-gray-200
+                transition-colors duration-300 flex flex-col items-center justify-center p-8
+                ${isDarkMode ? "bg-neutral-900" : "bg-white"}
+              `}
+            >
+              {/* Heading */}
+              <h2
+                className="mb-2"
+                style={{
+                  color: headingColor,
+                  fontSize: `${headingFontSize.value}${headingFontSize.unit}`,
+                  fontFamily: headingFontFamily,
+                  fontWeight: isBold ? 700 : 400,
+                  transition: "color 0.3s",
+                }}
+              >
+                {headingText}
+              </h2>
+              {/* Paragraph */}
+              <p
+                className="text-slate-600 leading-relaxed"
+                style={{
+                  fontSize: `${paragraphFontSize.value}${paragraphFontSize.unit}`,
+                  color: paragraphColor,
+                  transition: "color 0.3s",
+                }}
+              >
+                {paragraphText}
+              </p>
             </div>
-          </SatoriCollapsiblePanel>
-          {/* Paragraph Options */}
-          <SatoriCollapsiblePanel title="Paragraph Options" defaultOpen>
-            <div className="flex flex-col gap-4">
-              <SatoriMultiLineBox
-                label="Paragraph"
-                value={paragraphText}
-                onChange={setParagraphText}
-                rows={3}
-              />
-              <SatoriColorPicker
-                label="Color"
-                value={paragraphColor}
-                onChange={setParagraphColor}
-              />
-              <SatoriDimensionsBox
-                label={"Font Size"}
-                value={paragraphFontSize.value}
-                unit={paragraphFontSize.unit}
-                onValueChange={(val) =>
-                  setParagraphFontSize({ ...paragraphFontSize, value: val })
-                }
-                onUnitChange={(unitVal) =>
-                  setParagraphFontSize({ ...paragraphFontSize, unit: unitVal })
-                }
-              />
-            </div>
-          </SatoriCollapsiblePanel>
+          </div>
           {/* Dark/Light Mode Toggle */}
           <SatoriSwitch
             label="Dark Mode"
             checked={isDarkMode}
             onChange={setIsDarkMode}
-            className="mt-4"
+            className="absolute top-5 xl:right-[53%] right-[3%]"
           />
+          {/* Controls Panel(s) */}
+          <div className="w-full lg:w-1/2 sm:w-full sm:gap-15 p-4 flex xl:flex-col xl:gap-0 sm:justify-evenly">
+            {/* Heading Options */}
+            <SatoriCollapsiblePanel title="Heading Options" defaultOpen>
+              <div className="flex flex-col gap-4 overflow-y-visible">
+                <SatoriTextBox
+                  label="Heading"
+                  value={headingText}
+                  onChange={setHeadingText}
+                />
+                <SatoriColorPicker
+                  label="Color"
+                  value={headingColor}
+                  onChange={setHeadingColor}
+                />
+                <SatoriSwitch
+                  label="Bold"
+                  checked={isBold}
+                  onChange={setIsBold}
+                />
+                <SatoriDropDownList
+                  label="Font Family"
+                  value={headingFontFamily}
+                  onChange={setHeadingFontFamily}
+                  isFontFamily={false}
+                  options={STANDARD_FONT_FAMILIES}
+                />
+                <SatoriDimensionsBox
+                  label={"Font Size"}
+                  value={headingFontSize.value}
+                  unit={headingFontSize.unit}
+                  onValueChange={(val) =>
+                    setHeadingFontSize({ ...headingFontSize, value: val })
+                  }
+                  onUnitChange={(unitVal) =>
+                    setHeadingFontSize({ ...headingFontSize, unit: unitVal })
+                  }
+                />
+              </div>
+            </SatoriCollapsiblePanel>
+            {/* Paragraph Options */}
+            <SatoriCollapsiblePanel title="Paragraph Options" defaultOpen>
+              <div className="flex flex-col gap-4">
+                <SatoriMultiLineBox
+                  label="Paragraph"
+                  value={paragraphText}
+                  onChange={setParagraphText}
+                  rows={3}
+                />
+                <SatoriColorPicker
+                  label="Color"
+                  value={paragraphColor}
+                  onChange={setParagraphColor}
+                />
+                <SatoriDimensionsBox
+                  label={"Font Size"}
+                  value={paragraphFontSize.value}
+                  unit={paragraphFontSize.unit}
+                  onValueChange={(val) =>
+                    setParagraphFontSize({ ...paragraphFontSize, value: val })
+                  }
+                  onUnitChange={(unitVal) =>
+                    setParagraphFontSize({ ...paragraphFontSize, unit: unitVal })
+                  }
+                />
+              </div>
+            </SatoriCollapsiblePanel>
+          </div>
         </div>
       </section>
 
       {/* Components List Section */}
-      <section className="w-full max-w-4xl mt-8 mb-20">
+      <section className="w-full mt-8 mb-20">
         <h3 className="text-2xl font-bold mb-6 text-center">Components</h3>
         <div className="flex flex-col gap-5">
           {/* SatoriCollapsiblePanel */}
-          <div className="flex items-center gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[200px] flex justify-center items-center">
+            <div className="w-[300px] flex justify-center items-center">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriCollapsiblePanel
                 title={"Spacing"}
@@ -254,9 +280,9 @@ export default function Page() {
             </div>
           </div>
           {/* SatoriButton */}
-          <div className="flex items-center gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[200px] flex justify-center items-center">
+            <div className="w-[300px] flex justify-center items-center">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriButton type="button" variant="light" size="lg">
                 Click Me
@@ -271,9 +297,9 @@ export default function Page() {
             </div>
           </div>
           {/* SatoriCheckBox */}
-          <div className="flex items-center gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[200px] flex justify-center items-center">
+            <div className="w-[300px] flex justify-center items-center">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriCheckBox
                 checked={isChecked}
@@ -289,9 +315,9 @@ export default function Page() {
             </div>
           </div>
           {/* SatoriTextBox */}
-          <div className="flex items-center gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[200px] flex justify-center items-center">
+            <div className="w-[300px] flex justify-center items-center">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriTextBox
                 value={tbDemoVal}
@@ -307,9 +333,9 @@ export default function Page() {
             </div>
           </div>
           {/* SatoriMultiLineBox */}
-          <div className="flex items-center gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[200px] flex justify-center items-center">
+            <div className="w-[300px] flex justify-center items-center">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriMultiLineBox
                 rows={3}
@@ -326,9 +352,9 @@ export default function Page() {
             </div>
           </div>
           {/* SatoriDropDownList */}
-          <div className="flex items-center gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[200px] flex justify-center items-center">
+            <div className="w-[300px] flex justify-center items-center">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriDropDownList
                 options={TEXT_DECORATIONS}
@@ -346,10 +372,30 @@ export default function Page() {
               </div>
             </div>
           </div>
-          {/* SatoriColorPicker */}
-          <div className="flex items-center gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          {/* SatoriDimensionsBox */}
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[200px] flex justify-center items-center">
+            <div className="w-[300px] flex justify-center items-center">
+              {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
+              <SatoriDimensionsBox
+                value={dimDemoVal.value}
+                unit={dimDemoVal.unit}
+                onValueChange={val => setDimDemoVal({...dimDemoVal, value: val})}
+                onUnitChange={unitVal => setDimDemoVal({...dimDemoVal, unit: unitVal})}
+              />
+            </div>
+            {/* Right: Name + description */}
+            <div className="flex-1 flex-col">
+              <div className="font-semibold text-lg">SatoriDimensionsBox</div>
+              <div className="text-gray-600">
+                A clean, minimalistic Dimensions Input Box component.
+              </div>
+            </div>
+          </div>
+          {/* SatoriColorPicker */}
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+            {/* Left: Mini live demo stub (replace with real demo) */}
+            <div className="w-[300px] flex justify-center items-center">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriColorPicker
                 label={"Color"}
@@ -366,9 +412,9 @@ export default function Page() {
             </div>
           </div>
           {/* SatoriSwitch */}
-          <div className="flex items-center gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[200px] flex justify-center items-center">
+            <div className="w-[300px] flex justify-center items-center">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriSwitch
                 checked={swDemoVal}

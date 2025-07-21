@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --satori-showcase-bg: #f9fafb; /* This is Tailwind's gray-50 */
 }
 
 @theme inline {

@@ -86,7 +86,7 @@ export default function SatoriCollapsiblePanel({
   };
 
   return (
-    <div className="flex flex-col shadow bg-white dark:bg-neutral-900 z-10">
+    <div className="flex flex-col shadow bg-white dark:bg-neutral-900 z-10 w-full">
       <div
         className={`flex items-center justify-between w-full p-3 border-b-2 border-neutral-200 dark:border-neutral-700 select-none transition
           ${toggleHeader ? "cursor-default" : "cursor-pointer"}`}
@@ -113,7 +113,7 @@ export default function SatoriCollapsiblePanel({
         )}
       </div>
       <div
-        className={`flex-1 overflow-visible transition-all duration-1500 ease-in-out z-15 ${
+        className={`flex-1 overflow-visible transition-all duration-1500 ease-out z-15 ${
           open ? "h-full p-4" : "max-h-0 px-4"
         }`}
       >
