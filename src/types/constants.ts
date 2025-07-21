@@ -1,4 +1,3 @@
-import { TextTransformType } from "../stores/state-interfaces";
 /**
  * Column layout configurations, mimicking Unlayer's.
  * Each widths array should sum to 1.0 for ratios.
