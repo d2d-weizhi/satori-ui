@@ -76,7 +76,7 @@ export default function Page() {
         w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200 py-16
         ">
         <h3
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-7xl text-gray-700 mb-8 font-semibold tracking-tight text-center leading-none w-[60%]"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl text-gray-700 mb-8 font-semibold tracking-tight text-center leading-none w-[60%]"
           style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "1px" }}
         >
           What is Satori?
