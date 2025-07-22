@@ -64,7 +64,7 @@ export default function Page() {
         >
           Satori
         </h1>
-        <hr className="border-[2px] border-gray-800 2xl:w-[30%] xl:w-[35%] lg:w-[35%] md:w-[45%] sm:w-[60%] w-[65%] min-w-[180px]" />
+        <hr className="border-[2px] border-gray-800 2xl:w-[30%] xl:w-[35%] lg:w-[35%] md:w-[45%] sm:w-[60%] w-[60%] min-w-[180px]" />
         <h2 className="text-xl mt-4 text-center text-gray-500 font-light font-italic max-w-2xl">
           Minimalistic UI that Just Flows.
         </h2>
