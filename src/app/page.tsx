@@ -142,7 +142,7 @@ export default function Page() {
             arranges the preview and controls. 'relative' and 'z-20' ensure it's on top. */}
         <div className="relative z-20 flex flex-col xl:flex-row gap-4 p-4 lg:p-6 min-h-[600px]">
           {/* Dark/Light Mode Toggle */}
-            <div className="absolute flex right-15 top-5 gap-3 justify-end items-center mb-4 xl:mr-15">
+            <div className="absolute flex right-15 top-5 gap-3 justify-end items-center mb-4 xl:mr-25">
               <span className="text-sm text-gray-700">Toggle Dark Mode</span>
               <SatoriSwitch
                 checked={isDarkMode}
@@ -187,7 +187,7 @@ export default function Page() {
           
           {/* Controls Panel(s) */}
           <div className="w-full 
-            xl:basis-2/3 xl:flex-col xl:gap-0 xl:mt-12 xl:mr-15
+            xl:basis-2/3 xl:flex-col xl:gap-0 xl:mt-12 xl:mr-25
             p-4 flex md:flex-row flex-col gap-4">
             {/* Heading Options */}
             <SatoriCollapsiblePanel title="Heading Options" defaultOpen>
