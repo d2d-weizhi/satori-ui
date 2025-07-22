@@ -270,17 +270,19 @@ export default function Page() {
           {/* SatoriCollapsiblePanel */}
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
-              {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
-                <SatoriCollapsiblePanel
-                  title={"Spacing"}
-                  icon={<Space size={20} />}
-                  defaultOpen>
-                  Open Panel
-                </SatoriCollapsiblePanel> 
+            <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 xl:rounded-l-lg rounded-lg bg-gray-50 xl:p-10 p-5">
+              <span className="2xl:hidden absolute top-2 left-[50%] text-xs font-semibold text-gray-500">
+                SatoriCollapsiblePanel
+              </span>
+              <SatoriCollapsiblePanel
+                title={"Spacing"}
+                icon={<Space size={20} />}
+                defaultOpen>
+                Open Panel
+              </SatoriCollapsiblePanel> 
             </div>
             {/* Center: Name + description */}
-            <div className="flex-1 flex-col">
+            <div className="2xl:flex-1 hidden flex-col">
               <div className="font-semibold text-lg">SatoriCollapsiblePanel</div>
               <div className="text-gray-600">
                 A clean, minimalistic Collapsible Panel component.
@@ -288,7 +290,7 @@ export default function Page() {
             </div>
             {/* Code Usage */}
             <div 
-              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              className="2xl:flex 2xl:w-[380px] xl:flex-1 hidden justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
               style={{
                 lineHeight: "1.7rem"
               }}
