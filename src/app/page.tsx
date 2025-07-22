@@ -122,7 +122,7 @@ export default function Page() {
           ></div>
         </div>
 
-        <div className="absolute top-0 left-0 h-full w-full z-1 bg-gradient-to-l from-white via-white via-40% to-gray-100/40">
+        <div className="absolute top-0 left-0 h-full w-full z-1 bg-gradient-to-l from-white via-white lg:via-40% via-20% to-gray-100/40">
         </div>
 
         {/* Layer 3: Content (z-20) */}
