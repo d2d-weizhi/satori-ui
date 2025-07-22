@@ -59,7 +59,7 @@ export default function Page() {
       {/* Hero Title */}
       <section className="w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200">
         <h1
-          className="text-6xl sm:7xl md:8xl lg:text-9xl xl:text-10xl 2xl:text-11xl font-bold tracking-tight text-center leading-none"
+          className="text-6xl sm:7xl md:8xl lg:text-10xl 2xl:text-11xl font-bold tracking-tight text-center leading-none"
           style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "2px" }}
         >
           Satori
