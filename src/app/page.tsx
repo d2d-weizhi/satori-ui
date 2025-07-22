@@ -73,7 +73,7 @@ export default function Page() {
       {/* Intro/Philosophy */}
       <section 
         className="
-        w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200
+        w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200 py-8
         ">
         <div className="text-3xl font-medium text-gray-700 mb-6 w-[60%]">
           What is Satori?
