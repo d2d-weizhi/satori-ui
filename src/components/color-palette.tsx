@@ -61,12 +61,12 @@ export default function ColorPalette() {
             </div>
             {/* Info */}
             <div className="ml-6 flex-1">
-              <div className="font-bold text-lg">{color.name}</div>
-              <div className="text-sm text-gray-600 mb-1">
+              <div className="font-bold text-lg md:justify-start justify-center">{color.name}</div>
+              <div className="text-sm text-gray-600 mb-1 md:justify-start justify-center">
                 <span className="font-mono">{color.hex}</span>
               </div>
-              <div className="text-sm text-slate-700 font-semibold">{color.mood}</div>
-              <div className="text-sm text-gray-500 mt-1">{color.description}</div>
+              <div className="text-sm text-slate-700 font-semibold md:justify-start justify-center">{color.mood}</div>
+              <div className="text-sm text-gray-500 mt-1 md:justify-start justify-center">{color.description}</div>
             </div>
           </div>
         ))}
