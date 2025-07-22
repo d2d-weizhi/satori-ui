@@ -271,7 +271,7 @@ export default function Page() {
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
             <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
-              <span className="md:hidden absolute top-5 left-0 w-full text-center text-sm font-bold text-gray-500">
+              <span className="md:hidden absolute top-5 left-0 w-full text-center text-lg font-bold text-gray-500">
                 SatoriCollapsiblePanel
               </span>
               <SatoriCollapsiblePanel
@@ -312,7 +312,7 @@ export default function Page() {
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
             <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
-              <span className="md:hidden absolute top-5 left-0 w-full text-center text-sm font-bold text-gray-500">
+              <span className="md:hidden absolute top-5 left-0 w-full text-center text-lg font-bold text-gray-500">
                 SatoriButton
               </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
@@ -348,7 +348,7 @@ export default function Page() {
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
             <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
-              <span className="md:hidden absolute top-5 left-0 w-full text-center text-sm font-bold text-gray-500">
+              <span className="md:hidden absolute top-5 left-0 w-full text-center text-lg font-bold text-gray-500">
                 SatoriCheckBox
               </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
@@ -387,7 +387,7 @@ export default function Page() {
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
             <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
-              <span className="md:hidden absolute top-5 left-0 w-full text-center text-sm font-bold text-gray-500">
+              <span className="md:hidden absolute top-5 left-0 w-full text-center text-lg font-bold text-gray-500">
                 SatoriTextBox
               </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
@@ -425,7 +425,7 @@ export default function Page() {
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
             <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
-              <span className="md:hidden absolute top-5 left-0 w-full text-center text-sm font-bold text-gray-500">
+              <span className="md:hidden absolute top-5 left-0 w-full text-center text-lg font-bold text-gray-500">
                 SatoriMultiLineBox
               </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
@@ -465,7 +465,7 @@ export default function Page() {
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
             <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
-              <span className="md:hidden absolute top-5 left-0 w-full text-center text-sm font-bold text-gray-500">
+              <span className="md:hidden absolute top-5 left-0 w-full text-center text-lg font-bold text-gray-500">
                 SatoriDropDownList
               </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
@@ -508,7 +508,7 @@ export default function Page() {
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
             <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
-              <span className="md:hidden absolute top-5 left-0 w-full text-center text-sm font-bold text-gray-500">
+              <span className="md:hidden absolute top-5 left-0 w-full text-center text-lg font-bold text-gray-500">
                 SatoriDimensionsBox
               </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
@@ -550,7 +550,7 @@ export default function Page() {
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
             <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
-              <span className="md:hidden absolute top-5 left-0 w-full text-center text-sm font-bold text-gray-500">
+              <span className="md:hidden absolute top-5 left-0 w-full text-center text-lg font-bold text-gray-500">
                 SatoriColorPicker
               </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
@@ -589,7 +589,7 @@ export default function Page() {
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
             <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
-              <span className="md:hidden absolute top-5 left-0 w-full text-center text-sm font-bold text-gray-500">
+              <span className="md:hidden absolute top-5 left-0 w-full text-center text-lg font-bold text-gray-500">
                 SatoriSwitch
               </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
