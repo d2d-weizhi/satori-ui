@@ -38,7 +38,7 @@ export default function ColorPalette() {
         {colorPalette.map((color, idx) => (
           <div
             key={color.name}
-            className="flex items-center bg-white/90 p-4"
+            className="flex md:flex-row flex-col items-center bg-white/90 p-4"
           >
             {/* Color Swatch */}
             <div className="flex-shrink-0">
