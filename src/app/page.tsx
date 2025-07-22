@@ -142,7 +142,7 @@ export default function Page() {
             arranges the preview and controls. 'relative' and 'z-20' ensure it's on top. */}
         <div className="relative z-20 flex flex-col xl:flex-row gap-4 p-4 lg:p-6 min-h-[600px]">
           {/* Dark/Light Mode Toggle */}
-            <div className="absolute flex right-15 top-5 gap-3 justify-end items-center mb-4">
+            <div className="absolute flex right-15 top-5 gap-3 justify-end items-center mb-4 xl:mr-15">
               <span className="text-sm text-gray-700">Toggle Dark Mode</span>
               <SatoriSwitch
                 checked={isDarkMode}
