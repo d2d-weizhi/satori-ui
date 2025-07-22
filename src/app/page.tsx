@@ -256,41 +256,60 @@ export default function Page() {
         w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200
         py-16
         ">
-        <div className="flex flex-col gap-2 justify-start sm:w-[60%] w-[70%] mb-8">
+        <div className="flex flex-col gap-4 justify-start w-[80%] mb-8">
           <h3
             className="flex text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl text-gray-700 font-semibold tracking-tight text-start leading-none"
             style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "1px" }}
           >
             Components
           </h3>
-          <img src="/made-with-react.svg" width="15%" />
+          <img src="/made-with-react.svg" width="12%" />
         </div>
           
-        <div className="flex flex-col gap-5  sm:w-[60%] w-[70%]">
+        <div className="flex flex-col gap-5  w-[80%]">
           {/* SatoriCollapsiblePanel */}
-          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[300px] flex justify-center items-center">
+            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
-              <SatoriCollapsiblePanel
-                title={"Spacing"}
-                icon={<Space size={20} />}
-                defaultOpen>
-                Open Panel
-              </SatoriCollapsiblePanel> 
+                <SatoriCollapsiblePanel
+                  title={"Spacing"}
+                  icon={<Space size={20} />}
+                  defaultOpen>
+                  Open Panel
+                </SatoriCollapsiblePanel> 
             </div>
-            {/* Right: Name + description */}
+            {/* Center: Name + description */}
             <div className="flex-1 flex-col">
               <div className="font-semibold text-lg">SatoriCollapsiblePanel</div>
               <div className="text-gray-600">
                 A clean, minimalistic Collapsible Panel component.
               </div>
             </div>
+            {/* Code Usage */}
+            <div 
+              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              style={{
+                lineHeight: "1.7rem"
+              }}
+            >
+              <pre className="whitespace-pre-wrap">
+                <code>
+{`<SatoriCollapsiblePanel 
+  title={"Spacing"} 
+  icon={<Space size={20} />}
+  defaultOpen 
+>
+  Opened Panel
+</SatoriCollapsiblePanel>`}
+                </code>
+              </pre>
+            </div>
           </div>
           {/* SatoriButton */}
-          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[300px] flex justify-center items-center">
+            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriButton type="button" variant="light" size="lg">
                 Click Me
@@ -303,13 +322,30 @@ export default function Page() {
                 A clean, minimalistic button component.
               </div>
             </div>
+            {/* Code Usage */}
+            <div 
+              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              style={{
+                lineHeight: "1.7rem"
+              }}
+            >
+              <pre className="whitespace-pre-wrap">
+                <code>
+{`<SatoriButton 
+  label="Click Me" 
+  variant="light" 
+/>`}
+                </code>
+              </pre>
+            </div>
           </div>
           {/* SatoriCheckBox */}
-          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[300px] flex justify-center items-center">
+            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriCheckBox
+                label={"Remember Me"}
                 checked={isChecked}
                 onChange={() => setIsChecked(!isChecked)} 
               />
@@ -321,11 +357,28 @@ export default function Page() {
                 A clean, minimalistic checkbox component.
               </div>
             </div>
+            {/* Code Usage */}
+            <div 
+              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              style={{
+                lineHeight: "1.7rem"
+              }}
+            >
+              <pre className="whitespace-pre-wrap">
+                <code>
+{`<SatoriCheckBox 
+  label="Agree" 
+  checked={isChecked}
+  onChange={() => ...}
+/>`}
+                </code>
+              </pre>
+            </div>
           </div>
           {/* SatoriTextBox */}
-          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[300px] flex justify-center items-center">
+            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriTextBox
                 value={tbDemoVal}
@@ -339,11 +392,28 @@ export default function Page() {
                 A clean, minimalistic textbox component.
               </div>
             </div>
+            {/* Code Usage */}
+            <div 
+              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              style={{
+                lineHeight: "1.7rem"
+              }}
+            >
+              <pre className="whitespace-pre-wrap">
+                <code>
+{`<SatoriTextBox 
+  label="First Name" 
+  value={firstName}
+  onChange={val => ...}
+/>`}
+                </code>
+              </pre>
+            </div>
           </div>
           {/* SatoriMultiLineBox */}
-          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[300px] flex justify-center items-center">
+            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriMultiLineBox
                 rows={3}
@@ -358,11 +428,29 @@ export default function Page() {
                 A clean, minimalistic MultiLineBox component.
               </div>
             </div>
+            {/* Code Usage */}
+            <div 
+              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              style={{
+                lineHeight: "1.7rem"
+              }}
+            >
+              <pre className="whitespace-pre-wrap">
+                <code>
+{`<SatoriMultiLineBox 
+  label="Feedback" 
+  rows={3}
+  value={feedback}
+  onChange={val => ...}
+/>`}
+                </code>
+              </pre>
+            </div>
           </div>
           {/* SatoriDropDownList */}
-          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[300px] flex justify-center items-center">
+            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriDropDownList
                 options={TEXT_DECORATIONS}
@@ -379,11 +467,30 @@ export default function Page() {
                 A clean, minimalistic DropDownList component.
               </div>
             </div>
+            {/* Code Usage */}
+            <div 
+              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              style={{
+                lineHeight: "1.7rem"
+              }}
+            >
+              <pre className="whitespace-pre-wrap">
+                <code>
+{`<SatoriDropDownList
+  options={TEXT_DECORATIONS}
+  value={textDecoration}
+  layout={"vertical"}
+  isFontFamily={false}
+  onChange={val => ...} 
+/>`}
+                </code>
+              </pre>
+            </div>
           </div>
           {/* SatoriDimensionsBox */}
-          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[300px] flex justify-center items-center">
+            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriDimensionsBox
                 value={dimDemoVal.value}
@@ -399,11 +506,30 @@ export default function Page() {
                 A clean, minimalistic Dimensions Input Box component.
               </div>
             </div>
+            {/* Code Usage */}
+            <div 
+              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              style={{
+                lineHeight: "1.7rem"
+              }}
+            >
+              <pre className="whitespace-pre-wrap">
+                <code>
+{`<SatoriDimensionsBox
+  label={"Font Size"}
+  value={fontSize.value}
+  unit={fontSize.unit}
+  onValueChange={val => ...}
+  onUnitChange={unitVal => ...}
+/>`}
+                </code>
+              </pre>
+            </div>
           </div>
           {/* SatoriColorPicker */}
-          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[300px] flex justify-center items-center">
+            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriColorPicker
                 label={"Color"}
@@ -418,11 +544,28 @@ export default function Page() {
                 A clean, minimalistic ColorPicker component.
               </div>
             </div>
+            {/* Code Usage */}
+            <div 
+              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              style={{
+                lineHeight: "1.7rem"
+              }}
+            >
+              <pre className="whitespace-pre-wrap">
+                <code>
+{`<SatoriColorPicker
+  label={"Color"}
+  value={cpDemoVal}
+  onChange={val => ...} 
+/>`}
+                </code>
+              </pre>
+            </div>
           </div>
           {/* SatoriSwitch */}
-          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
+          <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[300px] flex justify-center items-center">
+            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriSwitch
                 checked={swDemoVal}
@@ -435,6 +578,22 @@ export default function Page() {
               <div className="text-gray-600">
                 A clean, minimalistic Switch component.
               </div>
+            </div>
+            {/* Code Usage */}
+            <div 
+              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              style={{
+                lineHeight: "1.7rem"
+              }}
+            >
+              <pre className="whitespace-pre-wrap">
+                <code>
+{`<SatoriSwitch
+  checked={isDarkMode}
+  onChange={() => ...} 
+/>`}
+                </code>
+              </pre>
             </div>
           </div>
         </div>
