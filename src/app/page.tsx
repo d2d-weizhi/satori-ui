@@ -282,7 +282,7 @@ export default function Page() {
               </SatoriCollapsiblePanel> 
             </div>
             {/* Center: Name + description */}
-            <div className="sm:flex-1 sm:visible sm:flex-col hidden">
+            <div className="sm:flex-1 sm:flex-col hidden">
               <div className="font-semibold text-lg">SatoriCollapsiblePanel</div>
               <div className="text-gray-600">
                 A clean, minimalistic Collapsible Panel component.
