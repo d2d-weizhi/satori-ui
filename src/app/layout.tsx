@@ -29,7 +29,7 @@ export default function RootLayout({
       >
         {/* In your layout.tsx or equivalent */}
         <div className="fixed top-0 left-0 w-full z-50">
-          <div className="flex items-center justify-between px-6 py-3 bg-transparent">
+          <div className="flex items-center justify-between px-6 py-3 bg-[#f8fafc] shadow-xl">
             {/* Logo (left) */}
             <div
               style={{ width: 56, height: 56 }}
@@ -38,7 +38,7 @@ export default function RootLayout({
               <img
                 src="/satori-logo.svg"
                 alt="Satori UI Logo"
-                className="rounded-lg shadow-xl border border-gray-200 bg-white"
+                className="rounded-lg border border-gray-200 bg-white"
                 draggable={false}
               />
             </div>
