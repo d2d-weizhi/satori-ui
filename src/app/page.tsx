@@ -271,7 +271,7 @@ export default function Page() {
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
             <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 xl:rounded-l-lg rounded-lg bg-gray-50 xl:p-10 p-5">
-              <span className="2xl:hidden absolute top-2 left-[50%] text-xs font-semibold text-gray-500">
+              <span className="2xl:hidden absolute top-2 left-[25%] text-xs font-semibold text-gray-500">
                 SatoriCollapsiblePanel
               </span>
               <SatoriCollapsiblePanel
@@ -290,7 +290,7 @@ export default function Page() {
             </div>
             {/* Code Usage */}
             <div 
-              className="2xl:flex 2xl:w-[380px] lg:flex-1 hidden justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
+              className="xl:flex xl:w-[380px] lg:flex-1 hidden justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
               style={{
                 lineHeight: "1.7rem"
               }}
