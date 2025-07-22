@@ -130,7 +130,7 @@ export default function Page() {
             arranges the preview and controls. 'relative' and 'z-20' ensure it's on top. */}
         <div className="relative z-20 flex flex-col xl:flex-row gap-4 p-4 lg:p-6 min-h-[600px]">
           {/* Live Preview */}
-          <div className="w-full lg:w-1/2 sm:mt-8 lg:my-56 h-full flex items-center justify-center p-4">
+          <div className="w-full xl:basis-2/3 lg:w-1/2 sm:mt-8 lg:my-56 h-full flex items-center justify-center p-4">
             <div
               className={`
                 w-full mx-8 min-h-[200px] rounded-2xl shadow-xl border border-gray-200
@@ -172,7 +172,9 @@ export default function Page() {
             className="absolute top-5 xl:right-[53%] right-[3%]"
           />
           {/* Controls Panel(s) */}
-          <div className="w-full lg:w-1/2 sm:w-full sm:gap-15 p-4 flex xl:flex-col xl:gap-0 sm:justify-evenly">
+          <div className="w-full 
+            xl:basis-2/3 xl:flex-col
+            md:w-1/2 p-4 flex flex-row md:gap-0 gap-4">
             {/* Heading Options */}
             <SatoriCollapsiblePanel title="Heading Options" defaultOpen>
               <div className="flex flex-col gap-4 overflow-y-visible">
