@@ -271,7 +271,7 @@ export default function Page() {
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
             <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 xl:rounded-l-lg rounded-lg bg-gray-50 xl:p-10 p-5">
-              <span className="2xl:hidden absolute top-2 left-[25%] text-xs font-semibold text-gray-500">
+              <span className="md:hidden absolute top-0 left-0 w-full text-center text-xs font-semibold text-gray-500">
                 SatoriCollapsiblePanel
               </span>
               <SatoriCollapsiblePanel
@@ -282,7 +282,7 @@ export default function Page() {
               </SatoriCollapsiblePanel> 
             </div>
             {/* Center: Name + description */}
-            <div className="md:flex-1 md:visible hidden flex-col">
+            <div className="md:flex-1 md:visible flex-col hidden">
               <div className="font-semibold text-lg">SatoriCollapsiblePanel</div>
               <div className="text-gray-600">
                 A clean, minimalistic Collapsible Panel component.
