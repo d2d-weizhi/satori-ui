@@ -256,8 +256,17 @@ export default function Page() {
         w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200
         2xl:py-32
         ">
-        <h3 className="text-2xl font-bold mb-6 text-center">Components</h3>
-        <div className="flex flex-col gap-5 w-[60%]">
+        <div className="flex flex-col gap-2 justify-start sm:w-[60%] w-[70%] mb-8">
+          <h3
+            className="flex text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl text-gray-700 font-semibold tracking-tight text-start leading-none"
+            style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "1px" }}
+          >
+            Components
+          </h3>
+          <img src="/made-with-react.svg" width="15%" />
+        </div>
+          
+        <div className="flex flex-col gap-5  sm:w-[60%] w-[70%]">
           {/* SatoriCollapsiblePanel */}
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
             {/* Left: Mini live demo stub (replace with real demo) */}
