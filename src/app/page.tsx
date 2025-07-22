@@ -116,22 +116,18 @@ export default function Page() {
       {/* Live Demo Section */}
       <section className="relative w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200">
         {/* Layer 1: The Background Image (z-0) */}
-        <div className="absolute top-0 left-50 lg:left-0 h-full w-[100%] z-0 -translate-x-1/2">
+        <div className="absolute top-0 lg:left-50 left-0 h-full w-[100%] z-0 lg:-translate-x-1/2">
           <div
             className="h-full w-full bg-[url('/satori-ui-bg.png')] bg-cover bg-center opacity-80"
           ></div>
         </div>
 
-        {/* Layer 2: The Gradient Overlay (z-10) - CORRECTED */}
-        {/* This gradient uses the correct variable for the solid color on the right. */}
-        <div
-          className="absolute inset-0 z-10 
-             bg-gradient-to-r 
-             from-slate-50/20 
-             via-55%
-             via-[#f9fafb] 
-             to-[#f9fafb] lg:hidden"
-        ></div>
+        <div className="absolute top-0 left-0 h-full w-full z-1 bg-white"
+          style={{
+            opacity: .5
+          }}
+        >
+        </div>
 
         {/* Layer 3: Content (z-20) */}
         {/* This is the top layer for all interactive UI. It's a flex container that
