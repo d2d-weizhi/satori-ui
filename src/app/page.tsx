@@ -271,7 +271,7 @@ export default function Page() {
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
             <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
-              <span className="md:hidden absolute top-0 left-0 w-full text-center text-xs font-semibold text-gray-500">
+              <span className="md:hidden absolute top-2 left-0 w-full text-center text-sm font-bold text-gray-500">
                 SatoriCollapsiblePanel
               </span>
               <SatoriCollapsiblePanel
@@ -311,14 +311,17 @@ export default function Page() {
           {/* SatoriButton */}
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
+            <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
+              <span className="md:hidden absolute top-2 left-0 w-full text-center text-sm font-bold text-gray-500">
+                SatoriButton
+              </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriButton type="button" variant="light" size="lg">
                 Click Me
               </SatoriButton>
             </div>
             {/* Right: Name + description */}
-            <div className="flex-1 flex-col">
+            <div className="hidden md:block md:flex-1 flex-col">
               <div className="font-semibold text-lg">SatoriButton</div>
               <div className="text-gray-600">
                 A clean, minimalistic button component.
@@ -326,7 +329,7 @@ export default function Page() {
             </div>
             {/* Code Usage */}
             <div 
-              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              className="2xl:flex 2xl:w-[380px] 2xl:visible hidden justify-center  items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
               style={{
                 lineHeight: "1.7rem"
               }}
@@ -344,7 +347,10 @@ export default function Page() {
           {/* SatoriCheckBox */}
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
+            <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
+              <span className="md:hidden absolute top-2 left-0 w-full text-center text-sm font-bold text-gray-500">
+                SatoriCheckBox
+              </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriCheckBox
                 label={"Remember Me"}
@@ -353,7 +359,7 @@ export default function Page() {
               />
             </div>
             {/* Right: Name + description */}
-            <div className="flex-1 flex-col">
+            <div className="hidden md:block md:flex-1 flex-col">
               <div className="font-semibold text-lg">SatoriCheckBox</div>
               <div className="text-gray-600">
                 A clean, minimalistic checkbox component.
@@ -361,7 +367,7 @@ export default function Page() {
             </div>
             {/* Code Usage */}
             <div 
-              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              className="2xl:flex 2xl:w-[380px] 2xl:visible hidden justify-center  items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
               style={{
                 lineHeight: "1.7rem"
               }}
@@ -380,7 +386,10 @@ export default function Page() {
           {/* SatoriTextBox */}
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
+            <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
+              <span className="md:hidden absolute top-2 left-0 w-full text-center text-sm font-bold text-gray-500">
+                SatoriTextBox
+              </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriTextBox
                 value={tbDemoVal}
@@ -388,7 +397,7 @@ export default function Page() {
               />
             </div>
             {/* Right: Name + description */}
-            <div className="flex-1 flex-col">
+            <div className="hidden md:block md:flex-1 flex-col">
               <div className="font-semibold text-lg">SatoriTextBox</div>
               <div className="text-gray-600">
                 A clean, minimalistic textbox component.
@@ -396,7 +405,7 @@ export default function Page() {
             </div>
             {/* Code Usage */}
             <div 
-              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              className="2xl:flex 2xl:w-[380px] 2xl:visible hidden justify-center  items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
               style={{
                 lineHeight: "1.7rem"
               }}
@@ -415,7 +424,10 @@ export default function Page() {
           {/* SatoriMultiLineBox */}
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
+            <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
+              <span className="md:hidden absolute top-2 left-0 w-full text-center text-sm font-bold text-gray-500">
+                SatoriMultiLineBox
+              </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriMultiLineBox
                 rows={3}
@@ -424,7 +436,7 @@ export default function Page() {
               />
             </div>
             {/* Right: Name + description */}
-            <div className="flex-1 flex-col">
+            <div className="hidden md:block md:flex-1 flex-col">
               <div className="font-semibold text-lg">SatoriMultiLineBox</div>
               <div className="text-gray-600">
                 A clean, minimalistic MultiLineBox component.
@@ -432,7 +444,7 @@ export default function Page() {
             </div>
             {/* Code Usage */}
             <div 
-              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              className="2xl:flex 2xl:w-[380px] 2xl:visible hidden justify-center  items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
               style={{
                 lineHeight: "1.7rem"
               }}
@@ -452,7 +464,10 @@ export default function Page() {
           {/* SatoriDropDownList */}
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
+            <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
+              <span className="md:hidden absolute top-2 left-0 w-full text-center text-sm font-bold text-gray-500">
+                SatoriDropDownList
+              </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriDropDownList
                 options={TEXT_DECORATIONS}
@@ -463,7 +478,7 @@ export default function Page() {
               />
             </div>
             {/* Right: Name + description */}
-            <div className="flex-1 flex-col">
+            <div className="hidden md:block md:flex-1 flex-col">
               <div className="font-semibold text-lg">SatoriDropDownList</div>
               <div className="text-gray-600">
                 A clean, minimalistic DropDownList component.
@@ -471,7 +486,7 @@ export default function Page() {
             </div>
             {/* Code Usage */}
             <div 
-              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              className="2xl:flex 2xl:w-[380px] 2xl:visible hidden justify-center  items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
               style={{
                 lineHeight: "1.7rem"
               }}
@@ -492,7 +507,10 @@ export default function Page() {
           {/* SatoriDimensionsBox */}
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
+            <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
+              <span className="md:hidden absolute top-2 left-0 w-full text-center text-sm font-bold text-gray-500">
+                SatoriDimensionsBox
+              </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriDimensionsBox
                 value={dimDemoVal.value}
@@ -502,7 +520,7 @@ export default function Page() {
               />
             </div>
             {/* Right: Name + description */}
-            <div className="flex-1 flex-col">
+            <div className="hidden md:block md:flex-1 flex-col">
               <div className="font-semibold text-lg">SatoriDimensionsBox</div>
               <div className="text-gray-600">
                 A clean, minimalistic Dimensions Input Box component.
@@ -510,7 +528,7 @@ export default function Page() {
             </div>
             {/* Code Usage */}
             <div 
-              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              className="2xl:flex 2xl:w-[380px] 2xl:visible hidden justify-center  items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
               style={{
                 lineHeight: "1.7rem"
               }}
@@ -531,7 +549,10 @@ export default function Page() {
           {/* SatoriColorPicker */}
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
+            <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
+              <span className="md:hidden absolute top-2 left-0 w-full text-center text-sm font-bold text-gray-500">
+                SatoriColorPicker
+              </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriColorPicker
                 label={"Color"}
@@ -540,7 +561,7 @@ export default function Page() {
               />
             </div>
             {/* Right: Name + description */}
-            <div className="flex-1 flex-col">
+            <div className="hidden md:block md:flex-1 flex-col">
               <div className="font-semibold text-lg">SatoriColorPicker</div>
               <div className="text-gray-600">
                 A clean, minimalistic ColorPicker component.
@@ -548,7 +569,7 @@ export default function Page() {
             </div>
             {/* Code Usage */}
             <div 
-              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              className="2xl:flex 2xl:w-[380px] 2xl:visible hidden justify-center  items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
               style={{
                 lineHeight: "1.7rem"
               }}
@@ -567,7 +588,10 @@ export default function Page() {
           {/* SatoriSwitch */}
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="w-[350px] h-full flex justify-center items-center border-r border-gray-200 rounded-l-lg bg-gray-50 p-10">
+            <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 md:rounded-l-lg md:rounded-none rounded-lg bg-gray-50 xl:p-10 p-5">
+              <span className="md:hidden absolute top-2 left-0 w-full text-center text-sm font-bold text-gray-500">
+                SatoriSwitch
+              </span>
               {/* Place a mini live demo here, e.g. <SatoriButton>Sample</SatoriButton> */}
               <SatoriSwitch
                 checked={swDemoVal}
@@ -575,7 +599,7 @@ export default function Page() {
               />
             </div>
             {/* Right: Name + description */}
-            <div className="flex-1 flex-col">
+            <div className="hidden md:block md:flex-1 flex-col">
               <div className="font-semibold text-lg">SatoriSwitch</div>
               <div className="text-gray-600">
                 A clean, minimalistic Switch component.
@@ -583,7 +607,7 @@ export default function Page() {
             </div>
             {/* Code Usage */}
             <div 
-              className="flex justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg w-[380px] rounded-r-xl"
+              className="2xl:flex 2xl:w-[380px] 2xl:visible hidden justify-center  items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
               style={{
                 lineHeight: "1.7rem"
               }}
