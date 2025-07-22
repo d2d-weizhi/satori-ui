@@ -75,9 +75,12 @@ export default function Page() {
         className="
         w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200 py-16
         ">
-        <div className="text-3xl font-medium text-gray-700 mb-6 w-[60%]">
+        <h3
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-7xl text-gray-700 mb-8 font-semibold tracking-tight text-center leading-none w-[60%]"
+          style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "1px" }}
+        >
           What is Satori?
-        </div>
+        </h3>
         <p
           className="mb-4 text-gray-600 w-[60%]"
           style={{
