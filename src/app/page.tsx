@@ -133,7 +133,7 @@ export default function Page() {
           <div className="w-full xl:basis-2/3 lg:w-1/2 sm:mt-8 lg:my-56 h-full flex items-center justify-center p-4">
             <div
               className={`
-                w-full mx-8 min-h-[200px] rounded-2xl shadow-xl border border-gray-200
+                w-full mx-4 min-h-[200px] rounded-2xl shadow-xl border border-gray-200
                 transition-colors duration-300 flex flex-col items-center justify-center p-8
                 ${isDarkMode ? "bg-neutral-900" : "bg-white"}
               `}
