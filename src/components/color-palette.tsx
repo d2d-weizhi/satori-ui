@@ -22,6 +22,13 @@ const colorPalette = [
     mood: "Subtle energy, hope; the first light of blue sky.",
     description: "A subtle, early-morning blue used for highlights and accents. Energizing yet understated, inspiring gentle motivation.",
   },
+  {
+    name: "Carbon Black",
+    hex: "#374151",
+    swatch: ["#374151"],
+    mood: "Focus, authority, readability; like pencil lead on paper.",
+    description: "A deep, graphite-inspired black for text. Provides strong contrast and ensures the user's attention is always on what matters.",
+  },
 ];
 
 export default function ColorPalette() {

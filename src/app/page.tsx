@@ -113,7 +113,7 @@ export default function Page() {
           className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl text-gray-700 my-8 font-semibold tracking-tight text-start leading-none sm:w-[60%] w-[70%]"
           style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "1px" }}
         >
-          Colors (60:30:10)
+          Satori Color Palette
         </h4>
         <ColorPalette />
         <h4
