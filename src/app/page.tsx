@@ -108,14 +108,27 @@ export default function Page() {
           the next step in your UI journey.
         </p>
         <h4
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl text-gray-700 mb-8 font-semibold tracking-tight text-start leading-none sm:w-[60%] w-[70%]"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl text-gray-700 mb-8 font-semibold tracking-tight text-start leading-none sm:w-[60%] w-[70%]"
+          style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "1px" }}
+        >
+          Colors (60:30:10)
+        </h4>
+        <div className="text-base text-gray-500 w-[60%]">
+          {/* 60: bg-gradient-to-b from-[#f8fafc] to-[#e5e7eb] */}
+          {/* 30: grey-300 */}
+          {/* 10: blue-400 */}
+          {/* I need names for each, hex values, and the psychological mood they trigger. */}
+        </div>
+        <h4
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl text-gray-700 mb-8 font-semibold tracking-tight text-start leading-none sm:w-[60%] w-[70%]"
           style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "1px" }}
         >
           Design Philosophy
         </h4>
         <div className="text-base text-gray-500 w-[60%]">
-          {/* (Paste your vision/mission writeup here) */}
-          {/* You can edit/proof this later */}
+          {/* Col 1: Clarity/Focus - no clutter, or unwanted distractions (lucide Eye icon) */}
+          {/* Col 2: Smooth Flow - a UI that is working with you and for you (lucide Waves icon) */}
+          {/* Col 3: Simplicity - turning otherwise complex tasks into simple interactions (lucide MousePointerClick icon) */}
         </div>
       </section>
 
