@@ -57,19 +57,9 @@ export default function Page() {
   return (
     <div className="flex flex-col items-center w-full min-h-screen">
       {/* Hero Title */}
-      <section
-        className="
-        w-full flex flex-col items-center
-        2xl:my-90
-        xl:my-76
-        lg:my-62
-        md:my-48
-        sm:my-32
-        my-18
-        "
-      >
+      <section className="w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200">
         <h1
-          className="text-5xl sm:text-7xl lg:8xl xl:text-9xl font-bold tracking-tight text-center leading-none"
+          className="text-6xl sm:7xl md:8xl lg:text-9xl xl:text-10xl 2xl:text-11xl font-bold tracking-tight text-center leading-none"
           style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "2px" }}
         >
           Satori
@@ -80,12 +70,15 @@ export default function Page() {
       </section>
 
       {/* Intro/Philosophy */}
-      <section className="max-w-3xl w-full mb-14 px-2 text-center">
-        <div className="text-3xl font-medium text-gray-700 mb-6">
+      <section 
+        className="
+        w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200
+        ">
+        <div className="text-3xl font-medium text-gray-700 mb-6 w-[60%]">
           What is Satori?
         </div>
         <p
-          className="mb-4 text-gray-600"
+          className="mb-4 text-gray-600 w-[60%]"
           style={{
             fontSize: "18px",
             lineHeight: "1.6rem",
@@ -99,7 +92,7 @@ export default function Page() {
           real-world results.
         </p>
         <p
-          className="mb-4 text-gray-600"
+          className="mb-4 text-gray-600 w-[60%]"
           style={{
             fontSize: "18px",
             lineHeight: "1.6rem",
@@ -110,17 +103,15 @@ export default function Page() {
           look at. More components, docs, and tools are coming soon. Welcome to
           the next step in your UI journey.
         </p>
-        <div className="text-base text-gray-500">
+        <div className="text-base text-gray-500 w-[60%]">
           {/* (Paste your vision/mission writeup here) */}
           {/* You can edit/proof this later */}
         </div>
       </section>
 
       {/* Live Demo Section */}
-      <section className="relative mt-12 min-h-[900px] overflow-hidden rounded-lg border">
+      <section className="relative w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200">
         {/* Layer 1: The Background Image (z-0) */}
-        {/* This container is 200% wide and shifted left by 50% of its own width (which is 100% of the parent's width),
-            effectively aligning the image's center with the section's left edge. */}
         <div className="absolute top-0 left-50 lg:left-0 h-full w-[100%] z-0 -translate-x-1/2">
           <div
             className="h-full w-full bg-[url('/satori-ui-bg.png')] bg-cover bg-center opacity-80"
@@ -256,9 +247,13 @@ export default function Page() {
       </section>
 
       {/* Components List Section */}
-      <section className="w-full mt-8 mb-20">
+      <section 
+        className="
+        w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200
+        2xl:py-32
+        ">
         <h3 className="text-2xl font-bold mb-6 text-center">Components</h3>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 w-[60%]">
           {/* SatoriCollapsiblePanel */}
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100 p-5">
             {/* Left: Mini live demo stub (replace with real demo) */}
