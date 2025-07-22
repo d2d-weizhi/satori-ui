@@ -17,7 +17,7 @@ import { Space } from "lucide-react";
 export default function Page() {
   const [headingText, setHeadingText] = useState("Satori UI in Action");
   const [headingFontSize, setHeadingFontSize] = useState({
-    value: "3",
+    value: "2",
     unit: "rem",
   });
   const [headingColor, setHeadingColor] = useState("#222222");
@@ -139,7 +139,7 @@ export default function Page() {
               `}
             >
               {/* Heading */}
-              <h2
+              <h3
                 className="mb-2"
                 style={{
                   color: headingColor,
@@ -150,7 +150,7 @@ export default function Page() {
                 }}
               >
                 {headingText}
-              </h2>
+              </h3>
               {/* Paragraph */}
               <p
                 className="text-slate-600 leading-relaxed"
