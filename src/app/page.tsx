@@ -254,7 +254,7 @@ export default function Page() {
       <section 
         className="
         w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200
-        2xl:py-32
+        py-16
         ">
         <div className="flex flex-col gap-2 justify-start sm:w-[60%] w-[70%] mb-8">
           <h3
