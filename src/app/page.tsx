@@ -173,7 +173,7 @@ export default function Page() {
           />
           {/* Controls Panel(s) */}
           <div className="w-full 
-            xl:basis-2/3 xl:flex-col
+            xl:basis-2/3 xl:flex-col xl:gap-0
             p-4 flex md:flex-row flex-col gap-4">
             {/* Heading Options */}
             <SatoriCollapsiblePanel title="Heading Options" defaultOpen>
