@@ -118,7 +118,7 @@ export default function Page() {
         {/* Layer 1: The Background Image (z-0) */}
         <div className="absolute top-0 lg:left-50 left-0 h-full w-[100%] z-0 lg:-translate-x-1/2">
           <div
-            className="h-full w-full bg-[url('/satori-ui-bg.png')] bg-cover lg:bg-center md:bg-right opacity-80"
+            className="h-full w-full bg-[url('/satori-ui-bg.png')] bg-cover lg:bg-center bg-right opacity-80"
           ></div>
         </div>
 
@@ -130,7 +130,7 @@ export default function Page() {
             arranges the preview and controls. 'relative' and 'z-20' ensure it's on top. */}
         <div className="relative z-20 flex flex-col xl:flex-row gap-4 p-4 lg:p-6 min-h-[600px]">
           {/* Dark/Light Mode Toggle */}
-            <div className="absolute flex xl:right-10 right-5 top-5 gap-3 justify-end items-center mb-4">
+            <div className="absolute flex right-10 top-5 gap-3 justify-end items-center mb-4">
               <span className="text-sm text-gray-700">Toggle Dark Mode</span>
               <SatoriSwitch
                 checked={isDarkMode}
