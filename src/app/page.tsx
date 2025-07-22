@@ -76,13 +76,13 @@ export default function Page() {
         w-full flex flex-col items-center justify-center min-h-screen border-b border-gray-200 py-16
         ">
         <h3
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl text-gray-700 mb-8 font-semibold tracking-tight text-start leading-none w-[60%]"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl text-gray-700 mb-8 font-semibold tracking-tight text-start leading-none sm:w-[60%] w-[70%]"
           style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "1px" }}
         >
           What is Satori?
         </h3>
         <p
-          className="mb-4 text-gray-600 w-[60%]"
+          className="mb-4 text-gray-600 sm:w-[60%] w-[70%]"
           style={{
             fontSize: "18px",
             lineHeight: "1.6rem",
@@ -96,7 +96,7 @@ export default function Page() {
           real-world results.
         </p>
         <p
-          className="mb-4 text-gray-600 w-[60%]"
+          className="mb-4 text-gray-600 sm:w-[60%] w-[70%]"
           style={{
             fontSize: "18px",
             lineHeight: "1.6rem",
