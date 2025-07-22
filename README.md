@@ -2,8 +2,6 @@
 
 A collection of thoughtfully crafted React UI components, inspired by clarity, simplicity, and the subtle energy of morning light.
 
-![Satori UI preview banner](./screenshot-banner.png) <!-- (replace or remove if you don't have a screenshot yet) -->
-
 ---
 
 ## ✨ Overview
