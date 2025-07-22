@@ -263,7 +263,7 @@ export default function Page() {
           >
             Components
           </h3>
-          <img src="/made-with-react.svg" width="12%" />
+          <img src="/made-with-react.svg" className="lg:w-[12%] md:w-[20%] w-[30%]" />
         </div>
           
         <div className="flex flex-col gap-5  w-[80%]">
