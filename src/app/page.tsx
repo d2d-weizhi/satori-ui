@@ -12,6 +12,8 @@ import SatoriButton from "@/components/ui/button";
 import SatoriCheckBox from "@/components/ui/checkbox";
 import { STANDARD_FONT_FAMILIES, NOPERCENT_UNITS, TEXT_DECORATIONS } from "@/types/constants";
 import { Space } from "lucide-react";
+import ColorPalette from "@/components/color-palette";
+import DesignPhilosophy from "@/components/design-philosophy";
 // Import all your other components as needed...
 
 export default function Page() {
@@ -108,28 +110,19 @@ export default function Page() {
           the next step in your UI journey.
         </p>
         <h4
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl text-gray-700 mb-8 font-semibold tracking-tight text-start leading-none sm:w-[60%] w-[70%]"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl text-gray-700 my-8 font-semibold tracking-tight text-start leading-none sm:w-[60%] w-[70%]"
           style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "1px" }}
         >
           Colors (60:30:10)
         </h4>
-        <div className="text-base text-gray-500 w-[60%]">
-          {/* 60: bg-gradient-to-b from-[#f8fafc] to-[#e5e7eb] */}
-          {/* 30: grey-300 */}
-          {/* 10: blue-400 */}
-          {/* I need names for each, hex values, and the psychological mood they trigger. */}
-        </div>
+        <ColorPalette />
         <h4
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl text-gray-700 mb-8 font-semibold tracking-tight text-start leading-none sm:w-[60%] w-[70%]"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl text-gray-700 my-8 font-semibold tracking-tight text-start leading-none sm:w-[60%] w-[70%]"
           style={{ fontFamily: "'Roboto', sans-serif", letterSpacing: "1px" }}
         >
           Design Philosophy
         </h4>
-        <div className="text-base text-gray-500 w-[60%]">
-          {/* Col 1: Clarity/Focus - no clutter, or unwanted distractions (lucide Eye icon) */}
-          {/* Col 2: Smooth Flow - a UI that is working with you and for you (lucide Waves icon) */}
-          {/* Col 3: Simplicity - turning otherwise complex tasks into simple interactions (lucide MousePointerClick icon) */}
-        </div>
+        <DesignPhilosophy />
       </section>
 
       {/* Live Demo Section */}
