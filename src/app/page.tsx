@@ -270,7 +270,7 @@ export default function Page() {
           {/* SatoriCollapsiblePanel */}
           <div className="flex items-center h-[250px] gap-7 bg-white rounded-xl shadow border border-gray-100">
             {/* Left: Mini live demo stub (replace with real demo) */}
-            <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 xl:rounded-l-lg rounded-lg bg-gray-50 xl:p-10 p-5">
+            <div className="relative xl:w-[350px] w-[300px] h-full flex justify-center items-center border-r border-gray-200 lg:rounded-l-lg rounded-lg bg-gray-50 xl:p-10 p-5">
               <span className="md:hidden absolute top-0 left-0 w-full text-center text-xs font-semibold text-gray-500">
                 SatoriCollapsiblePanel
               </span>
