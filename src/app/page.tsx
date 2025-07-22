@@ -118,7 +118,7 @@ export default function Page() {
         {/* Layer 1: The Background Image (z-0) */}
         <div className="absolute top-0 lg:left-50 left-0 h-full w-[100%] z-0 lg:-translate-x-1/2">
           <div
-            className="h-full w-full bg-[url('/satori-ui-bg.png')] bg-cover lg:bg-center md:bg-end opacity-80"
+            className="h-full w-full bg-[url('/satori-ui-bg.png')] bg-cover lg:bg-center md:bg-right opacity-80"
           ></div>
         </div>
 
