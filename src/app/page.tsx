@@ -129,6 +129,14 @@ export default function Page() {
         {/* This is the top layer for all interactive UI. It's a flex container that
             arranges the preview and controls. 'relative' and 'z-20' ensure it's on top. */}
         <div className="relative z-20 flex flex-col xl:flex-row gap-4 p-4 lg:p-6 min-h-[600px]">
+          {/* Dark/Light Mode Toggle */}
+            <div className="absolute flex xl:right-10 right-5 top-5 gap-3 justify-end items-center mb-4">
+              <span className="text-sm text-gray-700">Toggle Dark Mode</span>
+              <SatoriSwitch
+                checked={isDarkMode}
+                onChange={setIsDarkMode}
+              />
+            </div>
           {/* Live Preview */}
           <div className="w-full xl:basis-2/3 lg:w-1/2 mt-16 lg:my-56 h-full flex items-center justify-center p-4">
             <div
@@ -164,16 +172,10 @@ export default function Page() {
               </p>
             </div>
           </div>
-          {/* Dark/Light Mode Toggle */}
-          <SatoriSwitch
-            label="Dark Mode"
-            checked={isDarkMode}
-            onChange={setIsDarkMode}
-            className="absolute top-5 xl:right-[53%] right-[3%]"
-          />
+          
           {/* Controls Panel(s) */}
           <div className="w-full 
-            xl:basis-2/3 xl:flex-col xl:gap-0
+            xl:basis-2/3 xl:flex-col xl:gap-0 xl:mt-12
             p-4 flex md:flex-row flex-col gap-4">
             {/* Heading Options */}
             <SatoriCollapsiblePanel title="Heading Options" defaultOpen>
