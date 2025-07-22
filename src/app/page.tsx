@@ -290,7 +290,7 @@ export default function Page() {
             </div>
             {/* Code Usage */}
             <div 
-              className="2xl:flex 2xl:w-[380px] xl:flex-1 hidden justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
+              className="2xl:flex 2xl:w-[380px] lg:flex-1 hidden justify-center items-center h-full p-4 text-gray-50 bg-slate-800 font-mono text-lg rounded-r-xl"
               style={{
                 lineHeight: "1.7rem"
               }}
