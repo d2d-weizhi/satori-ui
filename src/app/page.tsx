@@ -174,7 +174,7 @@ export default function Page() {
           {/* Controls Panel(s) */}
           <div className="w-full 
             xl:basis-2/3 xl:flex-col
-            md:w-1/2 p-4 flex flex-row md:gap-0 gap-4">
+            p-4 flex md:flex-row flex-col gap-4">
             {/* Heading Options */}
             <SatoriCollapsiblePanel title="Heading Options" defaultOpen>
               <div className="flex flex-col gap-4 overflow-y-visible">
