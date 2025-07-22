@@ -60,7 +60,7 @@ export default function ColorPalette() {
               )}
             </div>
             {/* Info */}
-            <div className="ml-6 flex-1">
+            <div className="md:ml-6 flex-1">
               <div className="font-bold text-lg md:text-start text-center">{color.name}</div>
               <div className="text-sm text-gray-600 mb-1 md:text-start text-center">
                 <span className="font-mono">{color.hex}</span>
