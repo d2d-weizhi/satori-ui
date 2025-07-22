@@ -24,7 +24,7 @@ const philosophies = [
 export default function DesignPhilosophy() {
   return (
     <div className="w-full flex justify-center mb-8">
-      <div className="sm:w-[60%] w-[70%] grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="sm:w-[60%] w-[70%] grid grid-cols-1 lg:grid-cols-3 gap-6">
         {philosophies.map((item) => (
           <div
             key={item.title}
