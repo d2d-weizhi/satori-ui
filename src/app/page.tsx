@@ -130,7 +130,7 @@ export default function Page() {
             arranges the preview and controls. 'relative' and 'z-20' ensure it's on top. */}
         <div className="relative z-20 flex flex-col xl:flex-row gap-4 p-4 lg:p-6 min-h-[600px]">
           {/* Live Preview */}
-          <div className="w-full xl:basis-2/3 lg:w-1/2 sm:mt-8 lg:my-56 h-full flex items-center justify-center p-4">
+          <div className="w-full xl:basis-2/3 lg:w-1/2 mt-16 lg:my-56 h-full flex items-center justify-center p-4">
             <div
               className={`
                 w-full mx-4 min-h-[200px] rounded-2xl shadow-xl border border-gray-200
